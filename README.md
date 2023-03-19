@@ -4,7 +4,7 @@ This is a ROS package that implements a closed-loop controller for controlling a
 
 ## Requirements
 
-- ROS (tested on ROS Melodic)
+- ROS (tested on ROS Noetic)
 - CoppeliaSim
 
 ## Installation
@@ -31,12 +31,12 @@ This is a ROS package that implements a closed-loop controller for controlling a
     roscore
     ```
 
-2. Start CoppeliaSim and load the scene "robotino_control.ttt" located in the `closed_loop_robotino/simulation` folder.
+2. Start CoppeliaSim and load the scene "robotino_control.ttt"
 
-3. Run the node `move_robotino_to_goal.py`:
+3. Run the node `robotino.py`:
 
     ```
-    rosrun closed_loop_robotino move_robotino_to_goal.py
+    rosrun robotino robotino.py
     ```
 
 4. Publish the goal you want using this command:
